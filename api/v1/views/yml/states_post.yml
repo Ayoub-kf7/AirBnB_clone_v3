@@ -1,7 +1,7 @@
-Creates a amenity object
+Creates a state object
 ---
 tags:
-    - Amenity
+    - States
 parameters:
     - name: id
       in: path
@@ -9,6 +9,8 @@ parameters:
       required: true
 responses:
   201:
-    description: new amenity created
+    description: new state created
+  404:
+    description: Resource not found
   400:
     description: Not a JSON or missing name
